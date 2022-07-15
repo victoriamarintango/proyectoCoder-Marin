@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.contenedor{
+    display: grid;
+    grid-template-areas: "header header header"
+                         "main   main   main"
+                         "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: auto; */
+    padding: 0;
+   
+}
+
+
+.header {
+    grid-area: header;
+    width: 100%;
+    background-image: linear-gradient( to right, #de6262 , #ffb88c);
+    /* width: 100%; */
+}
+
+/* .header img{
+    width: 250px;
+    height: 200px;
+}
+
+.header nav ul{
+    display: flex;
+}
+
+.header nav ul li {
+    list-style: none;
+}
+
+.header nav ul li a{
+    text-decoration: none;
+    padding: 1rem;
+    color: white;
+
+} */
+
+.main {
+    grid-area: main;
+    height: 100%;
+    background-color: black;
+}
+
+
+.videos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.videos iframe{
+    width: 100%;
+}
+
+
+.container-fluid img{
+    width: 100px;
+}
+
+
+/* .navbar-collapse {
+    flex-grow: 0;
+}
+
+.navbar {
+    /* background-color: #000000 !important; */
+/*}
+
+/* .collapse ul li a {
+    color: white;
+
+} */
+
+
+.container-fluid {
+    /* justify-content: space-around !important; */
+}
+
+/* .navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
+    color: rgb(255, 255, 255);
+    background-color: rgba(158, 158, 158, 0.5);
+} */
+
+
+.intro{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.intro p{
+    color: white;
+    padding: 3rem;
+    max-width: 400px;
+    margin: 0;
+
+}
+
+.intro img{
+    width: 600px;
+    overflow: hidden;
+}
+
+
+.main{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.galeriadefotos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.galeriadefotos__imagen1{
+    width: 400px;
+    border: 20px solid white;
+    margin: 10px;
+}
+
+.galeriadefotos__imagen2{
+    width: 400px;
+    border: 20px solid white;
+    margin: 10px;
+}
+
+.galeriadefotos__imagen3{
+    width: 400px;
+    border: 20px solid white;
+    margin: 10px;
+}
+
+.galeriadefotos__imagen4{
+    width: 400px;
+    border: 20px solid white;
+    margin: 10px;
+}
+
+.galeriadefotos__imagen5{
+    width: 400px;
+    border: 20px solid white;
+    margin: 10px;
+}
+
+.galeriadefotos__imagen6{
+    width: 400px;
+    border: 20px solid white;
+    margin: 10px;
+}
+
+.tarjetacontacto{
+    flex-direction: column;
+
+}
+
+
+.footer{
+    grid-area: footer;
+    background-color: black;
+    height: 150px;
+    display: flex;
+    padding: 3rem;
+    justify-content: center;
+}
+
+.footer ol{
+    display: flex
+}
+
+.footer ol li{
+    list-style: none;
+}
+
+.footer ol li a{
+    padding: 1rem;
+    color: white;
+    font-size: 1.5rem;
+}
