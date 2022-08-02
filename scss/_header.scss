@@ -1,0 +1,46 @@
+.header {
+    grid-area: header;
+    width: 100%;
+    background-image: linear-gradient( to right, #de6262 , #ffb88c);
+    /* width: 100%; */
+
+
+    .navbar {
+        background-color: black;
+
+        .navbar a {
+            color: rgb(139, 139, 139);
+
+            &:hover {
+                color: white;
+            }
+        }
+        
+    }
+    
+
+    
+    .nav-link.active {
+        color: white !important;
+    }
+}
+
+
+.header {
+    grid-area: header;
+    width: 100%;
+    background-image: linear-gradient(to right, #de6262, #ffb88c);
+    /* width: 100%; */
+  }
+  .header .navbar {
+    background-color: black;
+  }
+  .header .navbar .navbar a {
+    color: rgb(139, 139, 139);
+  }
+  .header .navbar .navbar a:hover {
+    color: white;
+  }
+  .header .nav-link.active {
+    color: white !important;
+  }
